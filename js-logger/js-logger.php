@@ -8,7 +8,7 @@ Description: Log all JavaScripts errors. Log stored in plugin directory in error
 
 Version: 0.1.0
 
-Author: Inverse Paradox - something
+Author: Inverse Paradox 
 
 */
 
@@ -28,10 +28,12 @@ function js_logger($type){ ?>
 
 <?php }
 	
+function logger_admin(){js_logger('admin');}
+function logger_frontend(){js_logger('frontend');}
 // admin
-add_action('admin_head', function(){js_logger('admin');}, 0);
+add_action('admin_head','logger_admin', 0);
 
 // front-end
-add_action('wp_head', function(){js_logger('frontend');}, 0);
+add_action('wp_head', 'logger_frontend', 0);
 
 ?>
