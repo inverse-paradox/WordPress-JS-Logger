@@ -8,7 +8,7 @@ Description: Log all JavaScripts errors. Log stored in plugin directory in error
 
 Version: 0.1.0
 
-Author: Inverse Paradox
+Author: Inverse Paradox - something
 
 */
 
